@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="ue_logo.png" alt="Avatar"  width="200" height="200">
+  </div>
+  <center><h2>University of the East - Manila</h2></center>
+
+  <div class="container">
+
+    <label for="uname"><b>Last Name:</b></label>
+    <input type="text" placeholder="Last Name" name="uname" required>
+    
+    <label for="uname"><b>First Name:</b></label>
+    <input type="text" placeholder="First Name" name="uname" required>
+
+    <label for="uname"><b>Middle Name:</b></label>
+    <input type="text" placeholder="Optional" name="uname">
+
+    <label for="uname"><b>Student Number:</b></label>
+    <input type="text" placeholder="Number Only" name="uname" required>
+
+
+      
+      <form action="/action_page.php">
+        <label for="program"><b>Program :</b></label>
+        <select name="program" id="program" required>
+            <option value="blank"></option>
+          <option value="CE">CE</option >
+          <option value="Cpe">CpE</option >
+          <option value="EE">EE</option >
+          <option value="ME">ME</option >
+        </select>
+
+        <label for="Curr. Yr"><b>Curr. Yr :</b></label>
+        <select name="Curr. Yr" id="Curr. Yr" required>
+          <option value="blank"></option>
+          <option value="Male">1st Year</option >
+          <option value="Female">2nd Year</option >
+          <option value="secret">3rd Year</option >
+          <option value="secret">4th Year</option >
+        </select>
+
+        <label for="uname"><b>UE E-manila Address</b></label>
+        <input type="text" placeholder="Optional" name="uname" required>
+
+        <label for="uname"><b>Contact Number</b></label>
+        <br>
+        <text>+63 </text> <input type="text" placeholder="Number Only" name="uname" required>
+        
+
+        <label for="birthdaytime"><b>Birthday (date & time) :</b></label>
+        <input type="date" id="birthdaytime" name="birthdaytime" required> 
+      </form>
+      
+
+      
+    <button type="submit">Submit</button>
+
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+  </div>
+</form>
+
+</body>
+</html>
