@@ -62,6 +62,22 @@ span.psw {
   }
 }
 
+.container1 {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Style for the text "+63" */
+        .prefix {
+            margin-right: 10px; /* Adjust the margin as needed */
+        }
+
+        /* Style for the input element */
+        .phone-input {
+            padding: 5px; /* Adjust the padding as needed */
+        }
+
+
 form {
             width: 50%; /* Set the width to 50% of the viewport width */
             margin: 0 auto; /* Center the form horizontally on the page */
