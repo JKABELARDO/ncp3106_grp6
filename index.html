@@ -1,84 +1,141 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <title>Add Student</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Add Student</h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="middleName">Middle Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="middleName"
+                  name="middleName"
+                  placeholder="Optional"
+                />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">UE Email Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="studNumber">Student Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="studNumber"
+                  name="studNumber"
+                />
+              </div>
 
-<h2><center>Registration Form</h2></center>
+              <div class="form-group">
+                <label for="program"><b>Program :</b></label>
+                <select name="program" id="program" required>
+                    <option value="blank"></option>
+                  <option value="CE">Civil Engineering</option >
+                  <option value="Cpe">Computer Engineering</option >
+                  <option value="EE">Electrical Engineering</option >
+                  <option value="ME">Mechanical Engineering</option >
+                </select>
 
-<form action="/action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="ue_logo.png" alt="Avatar"  width="200" height="200">
-  </div>
-  <center><h2>University of the East - Manila</h2></center>
+                <label for="currentYear"><b>Curr. Yr :</b></label>
+                <select name="currentYear" id="currentYear" required>
+                  <option value="blank"></option>
+                  <option value="1st">1st Year</option >
+                  <option value="2nd">2nd Year</option >
+                  <option value="3rd">3rd Year</option >
+                  <option value="4th">4th Year</option >
+                  <option value="5th">5th Year</option >
+                  <option value="6th">6th Year</option >  
+                </select>
 
-  <div class="container">
-
-    <label for="uname"><b>Student Number:</b></label>
-    <input type="text" placeholder="Number Only" name="uname" required>    
-
-    <label for="uname"><b>Last Name:</b></label>
-    <input type="text" placeholder="Last Name" name="uname" required>
-    
-    <label for="uname"><b>First Name:</b></label>
-    <input type="text" placeholder="First Name" name="uname" required>
-
-    <label for="uname"><b>Middle Name:</b></label>
-    <input type="text" placeholder="Optional" name="uname">
+                <label for="birthdayTime"><b>Birthday (date & time) :</b></label>
+                <input type="date" id="birthdayTime" name="birthdayTime" required>
+              </div>
 
 
 
-      <form action="/action_page.php">
-        <label for="program"><b>Program :</b></label>
-        <select name="program" id="program" required>
-            <option value="blank"></option>
-          <option value="CE">Civil Engineering</option >
-          <option value="Cpe">Computer Engineering</option >
-          <option value="EE">Electrical Engineering</option >
-          <option value="ME">Mechanical Engineering</option >
-        </select>
-
-        <label for="Curr. Yr"><b>Curr. Yr :</b></label>
-        <select name="Curr. Yr" id="Curr. Yr" required>
-          <option value="blank"></option>
-          <option value="1st">1st Year</option >
-          <option value="2nd">2nd Year</option >
-          <option value="3rd">3rd Year</option >
-          <option value="4th">4th Year</option >
-        </select>
-        <br>
-        <br>
-        <label for="uname"><b>UE E-mail Address</b></label>
-        <input type="text" placeholder="Please Enter Your UE E-mail" name="uname" required>
+              <div class="form-group">
+                <label for="contactNumber">Contact Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="contactNumber"
+                  name="contactNumber"
+                />
+              </div>
+              <input type="submit" class="btn btn-primary" />
+            </form>
+          </div>
         
-       
-        <label for="uname"><b>Contact Number</b></label>
-
-        <div class="container1">
-            <span class="prefix">+63</span>
-            <input type="text" class="phone-input" placeholder="Enter your phone number" required>
         </div>
-
-
-        <label for="birthdaytime"><b>Birthday (date & time) :</b></label>
-        <input type="date" id="birthdaytime" name="birthdaytime" required> 
-      </form>
-      
-
-      
-    <button type="submit">Submit</button>
-
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-  </div>
-</form>
-
-</body>
+      </div>
+    </div>
+</div>
+  </body>
 </html>
