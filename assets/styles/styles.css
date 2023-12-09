@@ -1,0 +1,158 @@
+body {
+	background-image: url('backgrounds/mainBg.png');  
+	background-size: cover; 
+	background-position: center;  
+	color: rgb(0, 0, 0);
+ 
+  }
+
+body, h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+   
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 35px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+ 
+.button-lets-go {
+	font-family: 'Poppins', sans-serif;
+	border-radius: 4px;
+	background-color: #000000;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 0px;
+	height: 50px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.button-lets-go span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+
+.button-lets-go span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+.button-lets-go:hover span {
+	padding-right: 25px;
+  }
+  
+.button-lets-go:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+
+
+.login-container {
+	display: flex;
+	flex-direction: column;  
+	height: 100vh;  
+	padding: 20px; 
+  }
+
+ 
+
+.welcome-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	line-height: 0.1;
+	height: 60vh; /* This will make sure your content is in the middle of the page */
+}
+
+.welcomeSign {
+	display: flex;
+	font-size: 100px; /* Increase the font size to make it larger */
+	text-align: center;
+	justify-content: center; /* Center the text horizontally */
+	align-items: center; /* Center the text vertically */
+}
+
+.cpeManagement {
+	font-size: 60px; /* Increase the font size to make it larger */
+}
+
+
+ 
+
+.logo-placeholder {
+	display: flex;
+	height: 100px;
+	width: 100px;
+	background-color: gray;
+	margin-top: 20px;
+	margin-left: auto;
+	 
+}
+
+.typing-animation {
+	margin-top: 20px;
+}
+
+ 
+.typewriter h2 {
+	overflow: hidden;  
+	border-right: .15em solid orange; 
+	white-space: nowrap;  
+	margin: 0 auto;  
+	letter-spacing: .15em;  
+	animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+ 
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+ 
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange; }
+}
+
+.swipe-out {
+    animation: swipe 1s forwards;
+}
+
+@keyframes swipe {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+  
+  
+.typePosition {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 20px;
+  }
+  
+  .typing-container {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 20px;	 
+  }
+  
+ 
+  
