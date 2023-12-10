@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Event</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Add Event</h1>
+          </div>
+          <div class="panel-body">
+            <form action="addevent.php" method="post">
+              <div class="form-group">
+                <label for="eventName">Event Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="eventName"
+                  name="eventName"
+                  placeholder="Event Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="eventDescription">Event Description</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="eventDescription"
+                  name="eventDescription"
+                  placeholder="Event Description"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="eventType"><b>Event Type :</b></label>
+                <select name="eventType" id="eventType" required>
+                    <option value="blank"></option>
+                  <option value="Curricular">Curricular</option >
+                  <option value="Extracurricular">Extracurricular</option >
+                  <option value="Outreach">Outreach</option >
+                  <option value="Conference">Conference</option >
+                  <option value="Seminar">Seminar</option >
+                  <option value="Team Building">Team Building</option >  
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="dateEvent"><b>Date of Event:</b></label>
+                <input class="form-control" type="date" id="dateEvent" name="dateEvent" placeholder="yyyy-mm-dd" min="1997-01-01" max="2030-12-31">
+
+                <label for="startTime"><b>Start time of Event:</b></label>
+                <input class="form-control" type="time" id="startTime" name="startTime" placeholder="Select Time">
+
+                <label for="endTime"><b>End time of Event:</b></label>
+                <input class="form-control" type="time" id="endTime" name="endTime" placeholder="Select Time">
+            </div>
+
+            <div class="form-group">
+                <label for="registrationFee">Registratio Fee</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="registrationFee"
+                  name="registrationFee"
+                />
+              </div>
+
+            <div class="form-group">
+                <label for="venue"><b>Venue :</b></label>
+                <select name="venue" id="venue" required>
+                    <option value="blank"></option>
+                  <option value="LB 211">Lualhati Building 211</option >
+                  <option value="LB 212">Lualhati Building 212</option >
+                  <option value="LB 213">Lualhati Building 213</option >
+                  <option value="LB 214">Lualhati Building 214</option >
+                </select>
+              </div>
+
+            <div class="form-group">
+                <label for="officerIncharge"><b>Officer-In-Charge :</b></label>
+                <select name="officerIncharge" id="officerIncharge" required>
+                    <option value="blank"></option>
+                  <option value="Alvindale">Alvindale</option >
+                  <option value="Mark">Mark</option >
+                  <option value="Kuya Rolly">Kuya Rolly</option >
+                  <option value="Siomai Master">Siomai Master</option >
+                </select>
+            </div>
+              <input type="submit" class="btn btn-primary" />
+            </form>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+</div>
+
+</script>
+  </body>
+</html>
