@@ -1,0 +1,116 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+    body {
+      background-image: url("backgrounds/image01.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: 'Poppins', sans-serif;
+    }
+    .logo {
+      text-align: center;
+      padding: 10px;
+      
+    }
+    
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.85);
+      border-radius: 20px;
+      padding: 50px;
+      text-align: center;
+      opacity: 0.95;
+    }
+    
+
+   
+
+    .question {
+      color: #fff;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+
+    .menus {
+      color: #fff;
+      font-size: 24px;
+      margin-top: 20px;
+    } 
+
+    .text-field {
+      width: 300px;
+      height: 40px;
+      margin-top: 20px;
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .next-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family:  'Poppins', sans-serif;
+    }
+
+    .next-button:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .login-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family:  'Poppins', sans-serif;
+    }
+
+    .login-button:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+
+    .password-field {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .password-field.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .next-button {
+      margin-top: 20px;
+    }
+    
+    .next-button.moved {
+      margin-top: 0;
+      display: none;
+    }
+    
+    .login-button {
+      margin-top: 20px;
+    }
+    
+    .login-button.hidden {
+      display: none;
+    }

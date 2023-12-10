@@ -1,0 +1,161 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+    body {
+      background-image: url("backgrounds/image02.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 1);
+      width: 25%;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .container:hover {
+      background-color: #ffffff;
+      border: 1px solid rgb(255, 255, 255);
+      color: #ffffff;
+      animation: pulse 0.5s;
+    }
+    
+    .typing-animation {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 0.15em solid #000;
+      animation: typing 3s steps(40, end), blink-caret 1.75s step-end infinite;
+  }
+
+  @keyframes typing {
+      from {
+          width: 0;
+      }
+      to {
+          width: 100%;
+      }
+  }
+
+  @keyframes blink-caret {
+      from, to {
+          border-color: transparent;
+      }
+      50% {
+          border-color: #ffffff;
+      }
+  }
+
+  .logo {
+    text-align: center;
+   
+  }
+  
+  .welcTex{
+    color: #ffffff;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+  }
+
+    .menus {
+      color: #fff;
+      font-size: 24px;
+    } 
+
+    .text-field {
+      width: 300px;
+      height: 40px;
+      margin-top: 20px;
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .button {
+      margin-top: 20px;
+      padding: 5px 20px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+      font-size: 35px;
+      width: 100%;
+    }
+
+    .logOut {
+      margin-top: 20px;
+      padding: 5px 20px;
+      
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      
+    }
+
+    .logOut:hover {
+      background-color: #af0000;
+      border: 1px solid rgb(255, 255, 255);
+      color: #ffffff;
+      animation: pulse 0.5s infinite;
+    }
+    
+    
+
+
+    .button:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .button:active {
+      transform: scale(0.95);
+    }
+
+    .container:hover {
+      background-color: #ffffff;
+      border: 1px solid rgb(255, 255, 255);
+      color: #ffffff;
+      animation: pulse 0.5s;
+    }
+
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    
+
+   
+     
+     
+
+
+     
