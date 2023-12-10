@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/logon_styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">    
+  </head>
+  <body>
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Logo" style="width: 150px; height: 150px;">
+    </div>
+    <br>
+    
+    <div class="container">
+      <div class="question">
+        <h1>Hello! Who are you?</h1>
+      </div>
+      <input type="text" class="text-field" placeholder="Enter your name here">
+      <br>
+      <button class="next-button" onclick="showPasswordField()">NEXT</button>
+      <div class="password-field" id="passwordField">
+        <input type="password" class="text-field" placeholder="Enter your password here">
+      </div>
+      <button class="login-button hidden" onclick="validateCredentials()" >LOGIN</button>
+    </div>
+    <script src="assets/scripts/logon_script.js"></script>
+  </body>
+  </html>
