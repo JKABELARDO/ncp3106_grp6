@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Form</title>
+</head>
+<body>
+
+    <h2>Date Event Form</h2>
+    <form action="date.php" method="post">
+        <div>
+            <label for="eventDate">Date Event:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+        </div>
+        <br>
+        <h2>Event Time Form</h2>
+        <div>
+            <label for="eventStart">Event Start Time:</label>
+            <input type="time" id="eventStart" name="eventStart" required>
+        </div>
+        <div>
+            <label for="eventEnd">Event End Time:</label>
+            <input type="time" id="eventEnd" name="eventEnd" required>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
